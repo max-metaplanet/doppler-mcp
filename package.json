@@ -1,0 +1,29 @@
+{
+  "name": "doppler-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server that wraps the Doppler CLI for secrets management",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "doppler-mcp-server": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "doppler",
+    "secrets",
+    "cli",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "@types/node": "^24.9.1",
+    "typescript": "^5.9.3"
+  }
+}
